@@ -48,7 +48,7 @@ public class DatastoreHelperTest {
   }
 
   @Test
-  public void testAllocateId() throws Exception {
+  public void testAllocateId() {
     Datastore datastore = createStrictMock(Datastore.class);
     IncompleteKey pKey1 = IncompleteKey.newBuilder("ds", "k").build();
     Key key1 = Key.newBuilder(pKey1, 1).build();
@@ -60,7 +60,7 @@ public class DatastoreHelperTest {
   }
 
   @Test
-  public void testGetWithDatastore() throws Exception {
+  public void testGetWithDatastore() {
     Datastore datastore = createStrictMock(Datastore.class);
     IncompleteKey pKey1 = IncompleteKey.newBuilder("ds", "k").build();
     Key key1 = Key.newBuilder(pKey1, 1).build();
@@ -81,7 +81,7 @@ public class DatastoreHelperTest {
   }
 
   @Test
-  public void testGetWithTransaction() throws Exception {
+  public void testGetWithTransaction() {
     Transaction transaction = createStrictMock(Transaction.class);
     IncompleteKey pKey1 = IncompleteKey.newBuilder("ds", "k").build();
     Key key1 = Key.newBuilder(pKey1, 1).build();
@@ -97,7 +97,7 @@ public class DatastoreHelperTest {
   }
 
   @Test
-  public void testAdd() throws Exception {
+  public void testAdd() {
     Datastore datastore = createStrictMock(Datastore.class);
     IncompleteKey pKey = IncompleteKey.newBuilder("ds", "k").build();
     Key key = Key.newBuilder(pKey, 1).build();
@@ -109,7 +109,7 @@ public class DatastoreHelperTest {
   }
 
   @Test
-  public void testFetchWithDatastore() throws Exception {
+  public void testFetchWithDatastore() {
     Datastore datastore = createStrictMock(Datastore.class);
     IncompleteKey pKey1 = IncompleteKey.newBuilder("ds", "k").build();
     Key key1 = Key.newBuilder(pKey1, 1).build();
@@ -136,7 +136,7 @@ public class DatastoreHelperTest {
   }
 
   @Test
-  public void testFetchWithTransaction() throws Exception {
+  public void testFetchWithTransaction() {
     Transaction transaction = createStrictMock(Transaction.class);
     IncompleteKey pKey1 = IncompleteKey.newBuilder("ds", "k").build();
     Key key1 = Key.newBuilder(pKey1, 1).build();
